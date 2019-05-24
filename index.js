@@ -1,6 +1,20 @@
-import { ChangeDetectionStrategy, Component, EventEmitter, Inject, Injectable, Input, NgModule, Output, Pipe, ViewEncapsulation } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { Subject, from } from 'rxjs';
+var CommonModule = require('@angular/common').CommonModule;
+
+var angularCore = require('@angular/core');
+var ChangeDetectionStrategy = angularCore.ChangeDetectionStrategy;
+var Component = angularCore.Component;
+var EventEmitter = angularCore.EventEmitter;
+var Inject = angularCore.Inject;
+var Injectable = angularCore.Injectable;
+var Input = angularCore.Input;
+var NgModule = angularCore.NgModule;
+var Output = angularCore.Output;
+var Pipe = angularCore.Pipe;
+var ViewEncapsulation = angularCore.ViewEncapsulation;
+
+var rxjs = require('rxjs');
+var from = rxjs.from;
+var Subject = rxjs.Subject;
 
 /**
  * @fileoverview added by tsickle
@@ -1379,4 +1393,14 @@ var SnotifyModule = /** @class */ (function () {
     return SnotifyModule;
 }());
 
-export { SnotifyModule, SnotifyComponent, SnotifyService, SnotifyPosition, SnotifyToast, ToastComponent, TruncatePipe, KeysPipe, ButtonsComponent, PromptComponent, ToastDefaults };
+module.exports.SnotifyModule = SnotifyModule;
+module.exports.SnotifyComponent = SnotifyComponent;
+module.exports.SnotifyService = SnotifyService;
+module.exports.SnotifyPosition = SnotifyPosition;
+module.exports.SnotifyToast = SnotifyToast;
+module.exports.ToastComponent = ToastComponent;
+module.exports.TruncatePipe = TruncatePipe;
+module.exports.KeysPipe = KeysPipe;
+module.exports.ButtonsComponent = ButtonsComponent;
+module.exports.PromptComponent = PromptComponent;
+module.exports.ToastDefaults = ToastDefaults;
